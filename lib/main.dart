@@ -135,11 +135,6 @@ class MyApp extends StatelessWidget {
                                     : i == 3
                                         ? 'Beauty'
                                         : 'Furniture'),
-
-                        // Text(i == 1 ? "Electronic")
-                        // Text(i == 2 ? "Appliences")
-                        // Text(i == 3 ? "Beauty")
-                        // Text(i == 4 ? "Furniture")
                       ],
                     ),
                 ],
