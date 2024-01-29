@@ -140,7 +140,13 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
-            Text('Hello, $_name! How are you ?')
+            SizedBox(
+              height: 50,
+            ),
+            Image.asset(
+              "variables/shoes.png",
+              width: MediaQuery.of(context).size.width,
+            )
           ],
         ),
         drawer: Drawer(),
