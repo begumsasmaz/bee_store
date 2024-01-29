@@ -82,30 +82,64 @@ class MyApp extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 60.0,
-                    ),
-                  ),
                   for (int i = 0; i < 5; i++)
                     Column(
                       children: [
-                        if (i == 0)
-                          Image.asset('variables/fashion.png',
-                              width: 50, height: 50)
-                        else if (i == 1)
-                          Image.asset('variables/electronic.png',
-                              width: 50, height: 50)
-                        else if (i == 2)
-                          Image.asset('variables/appliences.png',
-                              width: 50, height: 50)
-                        else if (i == 3)
-                          Image.asset('variables/beauty.png',
-                              width: 50, height: 50)
-                        else
-                          Image.asset('variables/furniture.png',
-                              width: 50, height: 50),
-                        Text(i % 2 == 0 ? "Fashion" : "Electronic"),
+                        Padding(padding: EdgeInsets.symmetric(horizontal: 55)),
+                        // if (i == 0)
+                        //   Image.asset('variables/fashion.png',
+                        //       width: 50, height: 50)
+                        // else if (i == 1)
+                        //   Image.asset('variables/electronic.png',
+                        //       width: 50, height: 50)
+                        // else if (i == 2)
+                        //   Image.asset('variables/appliences.png',
+                        //       width: 50, height: 50)
+                        // else if (i == 3)
+                        //   Image.asset('variables/beauty.png',
+                        //       width: 50, height: 50)
+                        // else
+                        //   Image.asset('variables/furniture.png',
+                        //       width: 50, height: 50),
+
+                        // if (i == 0)
+                        //   Text("0")
+                        // else if (i == 1)
+                        //   Text("0")
+                        // else if (i == 2)
+                        //   Text("0")
+                        // else if (i == 3)
+                        //   Text("0")
+                        // else
+                        //   Text("0")
+
+                        Image.asset(
+                          i == 0
+                              ? 'variables/fashion.png'
+                              : i == 1
+                                  ? 'variables/electronic.png'
+                                  : i == 2
+                                      ? 'variables/appliences.png'
+                                      : i == 3
+                                          ? 'variables/beauty.png'
+                                          : 'variables/furniture.png',
+                          width: 50,
+                          height: 50,
+                        ),
+                        Text(i == 0
+                            ? 'Fashion'
+                            : i == 1
+                                ? 'Electronic'
+                                : i == 2
+                                    ? 'Appliances'
+                                    : i == 3
+                                        ? 'Beauty'
+                                        : 'Furniture'),
+
+                        // Text(i == 1 ? "Electronic")
+                        // Text(i == 2 ? "Appliences")
+                        // Text(i == 3 ? "Beauty")
+                        // Text(i == 4 ? "Furniture")
                       ],
                     ),
                 ],
